@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+.sidebar .logo{
+	background: rgba(246,130,32,0.5);
+	background: linear-gradient(60deg, #00acc1, #26c6da);
+
+}
+
+.logo .logo-mini .logo-img img {
+    width: 46% !important;
+    margin: 0 auto;
+    
+}
+
+.sidebar .logo{
+	height:57px;
+}
+
+.sidebar .logo-img{
+	max-height: 57px;
+}
