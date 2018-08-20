@@ -8,12 +8,10 @@ export function initializer(keycloak: KeycloakService): () => Promise<any> {
 		    config: {
 		      url: 'https://keycloak.radixfs.com/auth',
 		      realm: 'development',
-		      clientId: 'portal-ui',
-		      'enable-cors': true
-		    },
+		      clientId: 'portal-ui'
+		      }
 		    initOptions: {
-		      onLoad: 'login-required',
-		      checkLoginIframe: false
+		      onLoad: 'login-required'
 		    }
 		 });
         resolve();
