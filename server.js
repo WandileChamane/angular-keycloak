@@ -1,11 +1,9 @@
+var express = require('express');
 var app = express();
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-var url = require('url');
-var request = require('request');
 var path = require('path');
 var cors = require('cors');
-
-
+var bodyParser = require('body-parser');
 app.use(cors());
 app.use(bodyParser.json());
 
