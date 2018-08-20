@@ -10,11 +10,12 @@ export function initializer(keycloak: KeycloakService): () => Promise<any> {
 		      realm: 'development',
 		      clientId: 'portal-ui',
 		      'enable-cors': true
-		    },
-		    initOptions: {
-		      onLoad: 'login-required',
-		      checkLoginIframe: false
-		    }
+		  }
+		    // },
+		    // initOptions: {
+		    //   onLoad: 'login-required',
+		    //   checkLoginIframe: false
+		    // }
 		 });
         resolve();
       } catch (error) {

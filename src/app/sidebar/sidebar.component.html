@@ -16,12 +16,12 @@
 
             <div class="user">
                 <div class="photo">
-                    <img src="./assets/img/faces/avatar.jpg" />
+                    <img src="/assets/img/qualica-logo.png"/>
                 </div>
                 <div class="user-info">
                     <a data-toggle="collapse" href="#collapseExample" class="collapsed">
                         <span>
-                            Tania Andrew
+                            Tenant Name
                             <b class="caret"></b>
                         </span>
                     </a>
@@ -29,20 +29,20 @@
                         <ul class="nav">
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="nav-link">
-                                    <span class="sidebar-mini">MP</span>
-                                    <span class="sidebar-normal">My Profile</span>
+                                    <i class="material-icons">dns</i>
+                                    <span class="sidebar-normal">Tenant 1</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="nav-link">
-                                    <span class="sidebar-mini">EP</span>
-                                    <span class="sidebar-normal">Edit Profile</span>
+                                    <i class="material-icons">dns</i>
+                                    <span class="sidebar-normal">Tenant 2</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="nav-link">
-                                    <span class="sidebar-mini">S</span>
-                                    <span class="sidebar-normal">Settings</span>
+                                    <i class="material-icons">dns</i>
+                                    <span class="sidebar-normal">Tenant 3</span>
                                 </a>
                             </li>
                         </ul>
@@ -112,19 +112,19 @@
                         <ul class="nav">
                             <li routerLinkActive="active" *ngFor="let childitem of menuitem.children" class="nav-item">
                                 <a [routerLink]="[menuitem.path, childitem.path]" class="nav-link">
-                                    <span class="sidebar-mini">{{childitem.ab}}</span>
+                                    <i class="material-icons">{{childitem.ab}}</i>
                                     <span class="sidebar-normal">{{childitem.title}}</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="http://md-pro-angular.creative-tim.com/documentation/tutorial?ref=md-pro-archive" class="nav-link">
                         <i class="material-icons">school</i>
                         <p>Documentation</p>
                     </a>
-                </li>
+                </li> -->
             </ul>
 
         </div>
