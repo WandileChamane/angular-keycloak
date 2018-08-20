@@ -9,10 +9,11 @@ export function initializer(keycloak: KeycloakService): () => Promise<any> {
 		      url: 'https://keycloak.radixfs.com/auth',
 		      realm: 'development',
 		      clientId: 'portal-ui'
-		      }
+		    }
 		    initOptions: {
 		      onLoad: 'login-required'
 		    }
+	
 		 });
         resolve();
       } catch (error) {
